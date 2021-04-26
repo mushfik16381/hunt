@@ -38,13 +38,14 @@ body{
            navbar part start
 ======================================= */
 nav{ 
-    border-bottom: 1px solid rgba(254, 198, 0,.2);
-    position: absolute !important;
+    border-bottom: 1px solid rgba(254, 198, 0,.5);
+    position: fixed !important;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1;
     padding-top: 20px !important;
+    padding-bottom: 20px;
 }
 nav ul li{
     margin-left: 20px;
@@ -72,6 +73,10 @@ nav ul li a:hover{
 }
 nav ul li a:hover::after{
     width: 85%;
+}
+.menufixed{
+    background: #222;
+    z-index: 9999;
 }
 /* =======================================
            navbar part end
@@ -110,7 +115,7 @@ nav ul li a:hover::after{
     font-size: 55px;
     font-weight: 700;
     color: #fec600;
-
+    text-transform: uppercase;
 }
 #banner-part .banner-slider .banner .overlay p{
     font-family: 'Raleway', sans-serif;
@@ -498,11 +503,11 @@ nav ul li a:hover::after{
     color: #fff;
 }
 #portfolio-part .overlay .img{
-    margin: 0 5px;
+    margin: 0 10px;
 }
 #portfolio-part .overlay .img img{
     width: 100%;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 /* =======================================
          portfolio-part end
@@ -700,109 +705,99 @@ nav ul li a:hover::after{
     background: url(../images/team-banner.jpg) no-repeat center;
     background-size: cover;
     margin-top: -110px;
-    position: relative;
 }
 #testimonial-part .overlay{
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0,.7);
-    padding: 110px 170px;
-
+    padding-top: 150px;
+    padding-bottom: 100px;
 }
-#testimonial-part .line{
-    background: url(../images/test-line.png) ;
-    width: 1px;
-    height: 504px;
+#testimonial-part .overlay .round{
+    width: 100px !important;
+    height: 100px;
+    border-radius: 50%;
+    background: #cccccc;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    transition: .4;
+}
+#testimonial-part .overlay .round img{
     position: absolute;
-    top: 163px;
-    left: 252px;
-    transform: translateX(-50%);
+    top: 11px;
+    left: 3px;
 }
-#testimonial-part .overlay .item{
-    display: flex;
-}
-#testimonial-part .img-slider{
-    width: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-#testimonial-part .img-slider .img-part{
-   width: 100px !important;
-   height: 100px;
-   background: #f1f1f1;
-   
-   border: none;
-   border-radius: 50%;
-   margin: 30px 20px;
-   position: relative;
-}
-#testimonial-part .img-slider .img-part img{
+#testimonial-part .overlay .round .overlay{
     width: 100%;
     height: 100%;
-    border-radius: 50%;
-    
-}
-#testimonial-part .img-slider .img-part .overlay-shape{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
     background: rgba(255, 255, 255,.7);
     position: absolute;
     top: 0;
     left: 0;
+    transition: .4s;
 }
-#testimonial-part .img-slider .slick-center .overlay-shape {
+#testimonial-part .overlay .slick-center .round{
+    background: #fec600;
+    transform: scale(1.2);
+}
+#testimonial-part .overlay .slick-center .overlay{
     opacity: 0;
 }
-#testimonial-part .slick-center {
-    background: #fec600 !important;
-    transform: scale(1.3);
-
-}
-#testimonial-part .details-slider{
-    width: 76%;
-    z-index: 9999;
-
-}
-#testimonial-part .details{
-    
-    background: #f1f1f1;    
-    padding-top: 60px;
-    padding-bottom: 40px;
-    padding-left: 40px;
-    padding-right: 30px;
+#testimonial-part .box{
     position: relative;
-    margin: 148px 30px;
 }
-#testimonial-part .details .after{
+#testimonial-part .line{
+    background: url(../images/test-line.png) ;
+    width: 1px;
+    height: 455px;
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+#testimonial-part .overlay .aligment{
+    display: flex;
+    align-items: center;
+}
+#testimonial-part .overlay .text-box{
+    width: 700px;
+    height: 300px;
+    background: #f1f1f1;
+    position: relative;
+}
+#testimonial-part .overlay .text-box .shape{
     width: 40px;
     height: 40px;
     background: #f1f1f1;
-    z-index: 9999;
     position: absolute;
     top: 50%;
     left: 0;
     transform: translate(-50%,-50%) rotate(45deg);
 }
-#testimonial-part .details h3{
+#testimonial-part .overlay .details{
+    padding: 30px;
+    
+}
+#testimonial-part .overlay .details h3{
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     font-weight: 500;
 }
-#testimonial-part .details h4{
+#testimonial-part .overlay .details h4{
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     font-weight: 400;
     padding-top: 7px;
     padding-bottom: 25px;
 }
-#testimonial-part .details p{
+#testimonial-part .overlay .details p{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
 }
-#testimonial-part .details .sign{
+#testimonial-part .overlay .details .sign{
     display: flex;
     justify-content: flex-end;
     padding-top: 15px;
@@ -817,8 +812,8 @@ nav ul li a:hover::after{
     line-height: 37px;
     font-size: 30px;
     position: absolute;
-    top: 11px;
-    left: 70px;
+    top: -13%;
+    left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
     transition: .4s;
@@ -834,8 +829,8 @@ nav ul li a:hover::after{
     line-height: 40px;
     font-size: 30px;
     position: absolute;
-    bottom: 26px;
-    left: 72px;
+    bottom: -13%;
+    left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
     transition: .4s;
@@ -880,7 +875,7 @@ nav ul li a:hover::after{
 #pricing-part .item{
     text-align: center;
     background: #f1f1f1;
-    margin: 10px 10px;
+    margin: 10px 15px;
 }
 #pricing-part .item h2{
     font-family: 'Raleway', sans-serif;
@@ -1008,6 +1003,7 @@ nav ul li a:hover::after{
 #counter-part{
     background: url(../images/team-banner.jpg) no-repeat center;
     background-size: cover;
+    background-attachment: fixed;
     margin-top: -30px;
 }
 #counter-part .angle{
@@ -1016,13 +1012,13 @@ nav ul li a:hover::after{
 #counter-part .overlay{
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0,.8);
+    background: rgba(0, 0, 0,.6);
     padding: 70px 0;
 }
 #counter-part .item{
     background: transparent;
     border: 1px solid white;
-    margin: 0 3px;
+    margin: 0 8px;
     color: white;
     text-align: center;
     padding: 12px 0;
@@ -1068,6 +1064,7 @@ nav ul li a:hover::after{
 #team-part .item{
     text-align: center;
     border: 1px solid #dddddd;
+    margin: 0 12px;
 }
 #team-part .img{
     background: #f1f1f1;
