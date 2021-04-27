@@ -12,7 +12,7 @@
     }
     /* ========nav start====== */
     .navbar-toggler{
-        background: #fff;
+        background: #fec600;
         color: #222 !important;
         border: none;
     }
@@ -412,7 +412,7 @@
     }
     /* ========nav start====== */
     .navbar-toggler{
-        background: #fff;
+        background: #fec600;
         color: #222 !important;
         border: none;
     }
@@ -795,7 +795,7 @@
     }
     /* ========nav start====== */
     .navbar-toggler{
-        background: #fff;
+        background: #fec600;
         color: #222 !important;
         border: none;
     }
@@ -834,7 +834,8 @@
         font-size: 48px;
     }
     #banner-part .banner-slider .banner .overlay p{
-        width: auto;
+        width: 80%;
+        margin: 0 auto;
         padding: 24px 0;
     }
     #banner-part .banner-slider .banner .overlay .btn a {
@@ -843,8 +844,18 @@
         margin: 0px 7px;
         margin-bottom: 60px;
     }
+    #banner-part .prev{
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 17px;
+    }
     #banner-part .next{
         right: -1%;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 17px;
     }
     #banner-bottom{
         display: none;
@@ -1187,12 +1198,48 @@
     }
     /* =========about end======== */
 
+    /* =========service start======== */
+    #service-part .line {
+        height: 709px;
+    }
+    /* =========service end======== */
+
     /* =========counter start======== */
     #counter-part .item {
         margin: 0 8px;
     }
     /* =========counter end======== */
-    
+
+    /* =========team start======== */
+    #team-part .item .details ul li {
+        margin: 0 5px;
+    }
+    #team-part .item .details h2 {
+        font-size: 18px;
+        padding-top: 7px;
+    }
+    #team-part .item .details h3 {
+        font-size: 15px;
+        padding-top: 8px;
+    }
+    #team-part .item:hover .details ul li {
+        margin-top: 18px;
+    }
+    #team-part .item:hover .details {
+        height: 134px;
+    }
+    /* =========team end======== */
+
+    /* =========contact start======== */
+    #contact-part {
+        padding-bottom: 20px;
+    }
+    #contact-part .item-part .item {
+        padding: 3px 52px;
+    }
+    /* =========contact end======== */
+
+
 }
 @media(min-width:1400px){
     #about-part .item-round {

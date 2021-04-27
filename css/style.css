@@ -121,7 +121,9 @@ nav ul li a:hover::after{
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    padding: 26px 275px;
+    padding: 26px 0;
+    width: 52%;
+    margin: 0 auto;
 }
 #banner-part .banner-slider .banner .overlay .btn a{
     font-family: 'Raleway', sans-serif;
