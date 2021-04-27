@@ -123,7 +123,7 @@ nav ul li a:hover::after{
     font-weight: 400;
     padding: 26px 0;
     width: 52%;
-    margin: 0 auto;
+    margin: 0 auto
 }
 #banner-part .banner-slider .banner .overlay .btn a{
     font-family: 'Raleway', sans-serif;
@@ -489,28 +489,127 @@ nav ul li a:hover::after{
 #portfolio-part{
     background: url(../images/portfolio-bg.jpg) no-repeat center;
     background-size: cover;
-
+    background-attachment: fixed;
 }
 #portfolio-part .overlay{
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0,.8); 
-    padding-bottom: 110px;  
+    background: rgba(0, 0, 0, 0.7); 
+    padding-top: 140px;
+    padding-bottom: 80px;
 }
-#portfolio-part .title-text h2{
-    color: #fff ;
-    padding-top: 110px;
-}
-#portfolio-part .title-text p{
-    color: #fff;
-}
-#portfolio-part .overlay .img{
+#portfolio-part .item{
     margin: 0 10px;
 }
-#portfolio-part .overlay .img img{
+#portfolio-part .item .img{
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+    position: relative;
 }
+#portfolio-part .item .img img{
+    width: 100%;
+}
+#portfolio-part .item .img .overlay{
+    width: 0;
+    height: 100%;
+    background: rgba(254, 198, 0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: -1;
+}
+#portfolio-part .item .img .overlay a i{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    color: #222;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+#portfolio-part .item .img .overlay h2{
+    width: 250px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    padding-bottom: 7px;
+    font-weight: 600;
+    text-align: center;
+    color: #222;
+    position: absolute;
+    bottom: 17%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    opacity: 0;
+    transition: .4s;
+}
+#portfolio-part .item .img .overlay p{
+    width: 250px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: #222;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    opacity: 0;
+    transition: .4s;
+}
+#portfolio-part .item .img:hover .overlay h2{
+    z-index: 1;
+    opacity: 1;
+}
+#portfolio-part .item .img:hover .overlay p{
+    z-index: 1;
+    opacity: 1;
+}
+#portfolio-part .text h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    color: #fec600;
+    text-align: left;
+}
+#portfolio-part .text{
+    padding-left: 30px;
+}
+#portfolio-part .text ul{
+    padding: 0;
+}
+#portfolio-part .text ul li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    padding-top: 30px;
+    margin-right: auto;
+    color: #fff;
+    cursor: pointer;
+    transition: .4s;
+}
+#portfolio-part .text ul li:hover{
+    color: #fec600;
+    padding-left: 10px;
+}
+#portfolio-part .item .img:hover .overlay{
+    width: 100%;
+    z-index: 1;
+}
+/* #portfolio-part .btn a:hover{
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(214, 198, 178,.75);
+-moz-box-shadow: 0px 0px 10px 0px rgba(214, 198, 178,.75);
+box-shadow: 0px 0px 10px 0px rgba(214, 198, 178.75);
+} */
 /* =======================================
          portfolio-part end
 ======================================= */
@@ -706,6 +805,7 @@ nav ul li a:hover::after{
 #testimonial-part{
     background: url(../images/team-banner.jpg) no-repeat center;
     background-size: cover;
+    background-attachment: fixed;
     margin-top: -110px;
 }
 #testimonial-part .overlay{
@@ -1061,12 +1161,13 @@ nav ul li a:hover::after{
 ======================================= */
 #team-part{
     margin-top: -80px;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 }
 #team-part .item{
     text-align: center;
     border: 1px solid #dddddd;
     margin: 0 12px;
+    transition: .4s;
 }
 #team-part .img{
     background: #f1f1f1;
@@ -1155,6 +1256,76 @@ nav ul li a:hover::after{
 /* =======================================
          team-part end
 ======================================= */
+
+
+/* ========================================
+         from css part start
+========================================== */
+#from-part{
+    margin-bottom: 190px;
+}
+#from-part .main{
+    justify-content: space-between;
+}
+#from-part input{
+    width: 100%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
+}
+#from-part input::placeholder{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fec600;
+}
+#from-part textarea{
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+    resize: none;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
+}
+#from-part textarea::placeholder{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fec600;
+}
+#from-part .btn{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+#from-part .btn button{
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 12px 36px;
+    background: #cca929;
+    color: #fff;
+    border: 1px solid #cca929;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: .4s;
+}
+#from-part .btn button:hover{
+    background: transparent;
+    background: #fff;
+    color: #fec600;
+}
+/* ========================================
+         from css part end
+========================================== */
 
 
 /* =======================================

@@ -161,7 +161,7 @@
     #portfolio-top{
         display: none;
     }
-    #portfolio-part .overlay{
+    /* #portfolio-part .overlay{
         padding-bottom: 10px;
     }
     #portfolio-part .title-text h2 {
@@ -169,7 +169,45 @@
     }
     #portfolio-part .overlay .img img {
         margin-bottom: 20px;
+    } */
+
+    #portfolio-part {
+        margin-top: 35px;
     }
+    #portfolio-part .overlay {
+        position: relative;
+        padding-top: 310px;
+        padding-bottom: 25px;
+    }
+    #portfolio-part .item {
+        margin: 0 16px;
+    }
+    #portfolio-part .overlay .text{
+        position: absolute;
+        top: 0 ;
+        left: 0;
+        width: 100%;
+        padding-left: 0;
+    }
+    #portfolio-part .overlay .text h2{
+        text-align: center;
+        padding-top: 40px;
+        font-size: 30px;
+    }
+    #portfolio-part .overlay .text ul {
+        margin: 10px;
+        margin-top: 25px;
+        text-align: center;
+    }
+    #portfolio-part .overlay .text ul li{
+        display: inline-block;
+        padding: 14px 9px;
+        font-size: 19px;
+    }
+    
+
+
+
     #portfolio-bottom{
         display: none;
     }
@@ -327,11 +365,36 @@
     /* ========team start====== */
     #team-part{
         margin-top: 0;
+        margin-bottom: 0;
     }
     #team-part .item{
         margin: 10px 20px;
     }
     /* ========team end====== */
+
+    /* ========form start====== */
+    #from-part input {
+        padding: 14px 14px;
+        margin-bottom: 15px;
+    }
+    #from-part input::placeholder{
+        font-size: 16px;
+    }
+    #from-part textarea::placeholder{
+        font-size: 16px;
+    }
+    #from-part textarea {
+        height: 170px;
+        margin-top: 8px;
+    }
+    #from-part .btn{
+        margin-top: 14px;
+    }
+    #from-part .btn button {
+        font-size: 18px;
+        padding: 7px 25px
+    }
+    /* ========form end====== */
 
     /* ========market-place start====== */
     #market-place-top{
@@ -341,7 +404,7 @@
         transform: rotate(0deg);
     }
     #market-place {
-        margin-top: -183px;
+        margin-top: -170px;
         margin-bottom: 310px;
         padding: 30px 0;
     }
@@ -570,7 +633,7 @@
     #portfolio-top{
         display: none;
     }
-    #portfolio-part .overlay{
+    /* #portfolio-part .overlay{
         padding-bottom: 10px;
     }
     #portfolio-part .title-text h2 {
@@ -578,6 +641,47 @@
     }
     #portfolio-part .overlay .img img {
         margin-bottom: 20px;
+    } */
+
+
+
+
+    #portfolio-part {
+        margin-top: 35px;
+    }
+    #portfolio-part .item {
+        display: flex;
+    }
+    #portfolio-part .overlay {
+        position: relative;
+        padding-top: 250px;
+        padding-bottom: 25px;
+    }
+    #portfolio-part .item .img{
+        margin: 12px;
+    }
+    #portfolio-part .overlay .text{
+        position: absolute;
+        top: 0 ;
+        left: 0;
+        width: 100%;
+        padding-left: 0;
+    }
+    #portfolio-part .overlay .text h2{
+        text-align: center;
+        padding-top: 40px;
+        font-size: 30px;
+    }
+    #portfolio-part .overlay .text ul {
+        width: 82%;
+        margin: 0 auto;
+        margin-top: 20px;
+        text-align: center;
+    }
+    #portfolio-part .overlay .text ul li{
+        display: inline-block;
+        padding: 14px 9px;
+        font-size: 19px;
     }
     #portfolio-bottom{
         display: none;
@@ -712,6 +816,30 @@
     }
     /* ========team end====== */
 
+     /* ========form start====== */
+     #from-part input {
+        padding: 14px 14px;
+        margin-bottom: 15px;
+    }
+    #from-part input::placeholder{
+        font-size: 16px;
+    }
+    #from-part textarea::placeholder{
+        font-size: 16px;
+    }
+    #from-part textarea {
+        height: 170px;
+        margin-top: 8px;
+    }
+    #from-part .btn{
+        margin-top: 14px;
+    }
+    #from-part .btn button {
+        font-size: 18px;
+        padding: 7px 25px
+    }
+    /* ========form end====== */
+
     /* ========market-place start====== */
     #market-place-top{
         display: none;
@@ -720,7 +848,7 @@
         transform: rotate(0deg);
     }
     #market-place {
-        margin-top: -183px;
+        margin-top: -165px;
         margin-bottom: 310px;
         padding: 30px 0;
     }
@@ -955,7 +1083,7 @@
     #portfolio-top{
         display: none;
     }
-    #portfolio-part .overlay {
+    /* #portfolio-part .overlay {
         padding-bottom: 40px;
     }
     #portfolio-part .title-text h2 {
@@ -966,7 +1094,45 @@
     }
     #portfolio-part .overlay .img img {
         margin-bottom: 16px;
-    }    
+    } */
+    
+    #portfolio-part .overlay {
+        position: relative;
+        padding-top: 240px;
+        padding-bottom: 25px;
+    }
+    #portfolio-part .item .img{
+        margin-bottom: 20px;
+    }
+    #portfolio-part .overlay .text{
+        position: absolute;
+        top: 0 ;
+        left: 0;
+        width: 100%;
+        padding-left: 0;
+    }
+    #portfolio-part .overlay .text h2{
+        text-align: center;
+        padding-top: 40px;
+        font-size: 30px;
+    }
+    #portfolio-part .item .img .overlay p{
+        font-size: 18px;
+    }
+    #portfolio-part .item .img .overlay h2{
+        font-size: 18px;
+    }
+    #portfolio-part .overlay .text ul {
+        width: 82%;
+        margin: 0 auto;
+        margin-top: 20px;
+        text-align: center;
+    }
+    #portfolio-part .overlay .text ul li{
+        display: inline-block;
+        padding: 14px 9px;
+        font-size: 19px;
+    }
     #portfolio-bottom{
         display: none;
     }
@@ -1136,12 +1302,37 @@
     }
     /* ========team end====== */
 
+    /* ========form start====== */
+    #from-part input {
+        padding: 12px 12px;
+        margin-bottom: 15px;
+        border-radius: 6px;
+    }
+    #from-part input::placeholder{
+        font-size: 16px;
+    }
+    #from-part textarea::placeholder{
+        font-size: 16px;
+    }
+    #from-part textarea {
+        height: 170px;
+        margin-top: 8px;
+    }
+    #from-part .btn{
+        margin-top: 14px;
+    }
+    #from-part .btn button {
+        font-size: 18px;
+        padding: 7px 25px
+    }
+    /* ========form end====== */
+
     /* ========market-place start====== */
     #market-place-top{
         display: none;
     }
     #market-place {
-        margin-top: -187px;
+        margin-top: -160px;
         margin-bottom: 200px;
         padding: 27px 0;
     }
